@@ -81,7 +81,7 @@ $DB->update( 'Table_Where_To_Update',
 );
 ```
 
-To `DELETE` something in DB you should refer to `$DB->insert()`.
+To `DELETE` something in DB you should refer to `$DB->delete()`.
 
 There are parameters of `delete('@param1','@param2')`:
 
