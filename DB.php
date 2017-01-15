@@ -7,6 +7,7 @@ class DB
 
     public function __construct($config)
     {
+        // create PDO
         $this->pdo = new PDO(
             $config['connection'].';dbname='.$config['name'],
             $config['username'],

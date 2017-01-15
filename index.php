@@ -6,18 +6,18 @@ $DB = new DB(require 'config.php');
 
 echo 'SELECT:<br/>';
 
+
+// to SELECT from DB
 $select = $DB->select('test');
-
 var_dump($select);
-echo '<br/>';
-echo 'INSERT: <br/>';
 
+// to INSERT in DB
 $DB->insert('test',
         [
             'test_text' => 'Example_Text'
         ]);
-echo 'UPDATE: <br/>';
 
+// to UPDATE DB
 $DB->update('test',
         [
             'test_text' => 'Changed_Text'
@@ -25,8 +25,8 @@ $DB->update('test',
         [
             'test_id' => '1'
         ]);
-echo 'DELETE: <br/>';
 
+// to DELETE from DB
 $DB->delete('test',
         [
            'test_text' => 'Example_text'
